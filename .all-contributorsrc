@@ -143,6 +143,25 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "asmijafar20",
+      "name": "Asmi Jafar",
+      "avatar_url": "https://avatars.githubusercontent.com/u/47150162?v=4",
+      "profile": "https://www.linkedin.com/in/asmijafar20",
+      "contributions": [
+        "doc",
+        "bug"
+      ]
+    },
+    {
+      "login": "ShaDe2312",
+      "name": "Shaunak Deshpande",
+      "avatar_url": "https://avatars.githubusercontent.com/u/86540850?v=4",
+      "profile": "https://github.com/ShaDe2312",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
