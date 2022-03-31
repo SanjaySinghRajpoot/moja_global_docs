@@ -18,7 +18,6 @@ Building the docker
 ::
 
    # from repository root folder
-   cd Docker
    docker build --build-arg NUM_CPU=8 -t moja/flint.example:bionic .
 
 -  Return to top level folder with ``cd ..``
@@ -31,7 +30,7 @@ Building the docker
    Building the FLINT.example image using Docker
 
 Commands to run using docker - stock result written to screen and
-results files create (./Run_Env/*.csv): :
+results files create (./Run_Env/*.csv):
 
 ::
 
@@ -43,7 +42,7 @@ results files create (./Run_Env/*.csv): :
    # For Windows
    docker run --rm -v %cd%/Run_Env:/usr/local/run_env -ti moja/flint.example:bionic bash -c "cd /usr/local/run_env/; moja.cli --config config/point_example.json --config config/libs.base.simple.json --logging_config logging.debug_on.conf"
 
-For the RothC example, you may run this command:-
+For the RothC example, you may run this command:
 
 ::
 
@@ -61,7 +60,7 @@ For the RothC example, you may run this command:-
    Running the examples using Docker
 
 Commands to run moja from within the docker - stock result written to
-screen and results files create (./Run_Env/*.csv): :
+screen and results files create (./Run_Env/*.csv):
 
 ::
 
@@ -71,7 +70,7 @@ screen and results files create (./Run_Env/*.csv): :
    # For Windows
    docker run --rm -v %cd%/Run_Env:/usr/local/run_env -ti moja/flint.example:bionic bash
 
-Then inside the running container: :
+Then inside the running container:
 
 ::
 
@@ -79,7 +78,7 @@ Then inside the running container: :
    moja.cli --config config/point_example.json --config config/libs.base.simple.json --logging_config logging.debug_on.conf
    moja.cli --config config/point_rothc_example.json --config config/libs.base_rothc.simple.json --logging_config logging.debug_on.conf
 
-The Output files created are visible in the below screenshot:-
+The Output files created are visible in the below screenshot:
 
 .. figure:: ../images/installation_docker/step2b_docker.png
    :alt: Running the moja.cli
@@ -94,4 +93,4 @@ The Output files created are visible in the below screenshot:-
   :alt: Output files created from runs
    Output files created from runs
 
-.. _Docker: ../prerequisites/docker.html
+.. _Docker: https://docs.moja.global/en/latest/prerequisites/docker.html

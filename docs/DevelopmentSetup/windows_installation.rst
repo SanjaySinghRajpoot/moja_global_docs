@@ -6,9 +6,9 @@ Windows Installation
 This section guides first-time contributors through installing FLINT
 development environment.
 
-Before proceeding further, make sure you have setup the project using
+Before proceeding further, make sure you have set up the project using
 Git by following our guide `Git and GitHub Guide`_. Also make sure you
-have the following prerequisites setup.
+have the following prerequisites set up.
 
 Prerequisites
 -------------
@@ -24,7 +24,7 @@ the Installation.
 Using vcpkg to install required libraries
 -----------------------------------------
 
-Start a command shell in the Vcpkg repository folder (that you had
+Start ``cmd`` in the Vcpkg repository folder (that you had
 cloned earlier) and use the following commands:
 
 ::
@@ -56,7 +56,7 @@ Setting up the FLINT development environment
 
    Develop Branch of FLINT
 
--  Start command shell in the FLINT folder of your system and run
+-  Start ``cmd`` in the FLINT folder of your system and run
    command:
 
 ::
@@ -67,7 +67,7 @@ Setting up the FLINT development environment
 Using CMake to build the project
 --------------------------------
 
-Start a command shell in your FLINT core
+Start ``cmd`` in your FLINT core
 repository folder. Now use the following commands to create the Visual
 Studio solution:
 
@@ -87,24 +87,25 @@ Studio solution:
 
 .. note::
 
-   All paths used below with ``C:\Development\moja-global`` will need to
+   All paths used below with ``C:\Development\moja-global`` need to
    be modified to match your system build location of the moja project.
 
-.. _Git and GitHub Guide: git_and_github_guide.html
-.. _Cmake: ../prerequisites/cmake.html
-.. _Visual Studio: ../prerequisites/visual_studio.html
-.. _Vcpkg: ../prerequisites/vcpkg.html
+.. _Git and GitHub Guide: https://docs.moja.global/en/latest/DevelopmentSetup/git_and_github_guide.html#make-a-contribution
+.. _Cmake: https://docs.moja.global/en/latest/prerequisites/cmake.html
+.. _Visual Studio: https://docs.moja.global/en/latest/prerequisites/visual_studio.html
+.. _Vcpkg: https://docs.moja.global/en/latest/prerequisites/vcpkg.html
 .. _FLINT core repository: https://github.com/moja-global/FLINT
 
 Building the FLINT
 ===================
 
-Run a command shell and navigate to the build folder.
+Run ``cmd`` and navigate to the build folder.
+
 - Type ``moja.sln`` in the command prompt. Visual studio is launched.
 - After Visual Studio has loaded completely, move to the Solution Explorer in the top right, expand the **CMakePredefinedTargets** and select **ALL_BUILD**.
 - Right click on **ALL_BUILD** and click on **Build** in the menu.
 
-.. figure:: ../images/windows_installation/all_build_visual_studio.png
+.. figure:: ../images/windows_installation/all_build_visual_studio.PNG
    :alt: ALL_BUILD of Visual Studio
    :width: 600
    :align: center
@@ -112,7 +113,7 @@ Run a command shell and navigate to the build folder.
    Solution Explorer in Visual Studio
 
 - If the output says Build 7 succeeded as shown in the image below, FLINT has built successfully.
-.. figure:: ../images/windows_installation/successful_build.png
+.. figure:: ../images/windows_installation/successful_build.PNG
    :alt: Successful Build
    :width: 600
    :align: center
@@ -121,7 +122,7 @@ Run a command shell and navigate to the build folder.
 - To see the freshly compiled FLINT executable, open the build folder and in the command prompt type: ``cd bin\debug``.
 - Type ``moja.cli`` in the command prompt.
 - You see this output:
-.. figure:: ../images/windows_installation/flint_executable_run.png
+.. figure:: ../images/windows_installation/flint_executable_run.PNG
    :alt: Output after Successful FLINT run
    :width: 600
    :align: center
